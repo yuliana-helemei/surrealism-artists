@@ -1,0 +1,26 @@
+:root {
+    --sky: #9DBBD0;
+    --sand: #D2B07A;
+    --ink: #2A2038;
+    --paper: #F1ECE0;
+    --blue: #2F3FA8;
+    --muted: #6B6275;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 18px;
+    color: var(--ink);
+    background-color: var(--paper);
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
