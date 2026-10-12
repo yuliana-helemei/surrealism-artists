@@ -24,3 +24,34 @@ h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+}
