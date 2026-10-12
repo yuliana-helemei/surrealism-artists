@@ -74,3 +74,19 @@ footer {
     font-size: 15px;
     opacity: 0.7;
 }
+
+.hero {
+    background: linear-gradient(to bottom, var(--sky) 70%, var(--sand) 70%);
+    min-height: 670px;
+    padding: 80px;
+}
+
+.hero h1 {
+    font-size: 168px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+}
