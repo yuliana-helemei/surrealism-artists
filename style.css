@@ -185,7 +185,7 @@ footer {
 
 .featured {
     display: grid;
-    grid-template-columns: 640px 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
     margin-bottom: var(--space-section);
 }
@@ -228,4 +228,42 @@ footer {
     font-size: 1.0625rem;
     color: var(--paper);
     border-radius: 999px;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 40px;
+    margin-bottom: var(--space-l);
+}
+
+.card__image {
+    width: 100%;
+    aspect-ratio: 10/7;
+    object-fit: cover;
+}
+
+.card__title {
+    margin-top: var(--space-s);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.card__meta {
+    margin-top: var(--space-s);
+    font-size: 0.9375rem;
+    line-height: 1;
+    color: var(--muted);
+}
+
+.card__description {
+    margin-top: var(--space-s);
+    font-size: 1rem;
+}
+
+.card__work {
+    margin-top: var(--space-s);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1875rem;
+    color: var(--blue);
 }
