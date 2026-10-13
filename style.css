@@ -120,3 +120,20 @@ footer {
     opacity: 0.8;
     clip-path: polygon(370px 0, 500px 0, 130px 100%, 0 100%);
 }
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    padding: 80px;
+}
+
+.intro h2 {
+    font-size: 40px;
+}
+
+.intro p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 680px;
+}
