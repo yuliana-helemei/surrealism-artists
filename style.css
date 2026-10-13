@@ -7,7 +7,7 @@
     --muted: #6B6275;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -79,6 +79,7 @@ footer {
     background: linear-gradient(to bottom, var(--sky) 70%, var(--sand) 70%);
     min-height: 670px;
     padding: 80px;
+    position: relative;
 }
 
 .hero h1 {
@@ -89,4 +90,26 @@ footer {
 
 .hero p {
     font-size: 22px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 130px; height: 270px;
+    border: 16px solid var(--ink);
+    background: radial-gradient(circle at 86% 52%, var(--sand) 7px, transparent 8px), var(--sky);
+    right: 270px;
+    bottom: 30%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: 270px;
+    width: 500px;
+    height: 175px;
+    background-color: var(--ink);
+    opacity: 0.8;
+    clip-path: polygon(370px 0, 500px 0, 130px 100%, 0 100%);
 }
