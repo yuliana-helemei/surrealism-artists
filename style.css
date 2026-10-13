@@ -137,3 +137,44 @@ footer {
     line-height: 1.6;
     max-width: 680px;
 }
+
+.artists {
+    margin: 0 80px;
+    border-top: 1px solid var(--ink);
+    padding-top: 15px;
+    
+}
+
+.artists-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 56px;
+}
+
+.filters {
+    display: flex;
+    gap: 14px;
+    margin-right: 85px;
+}
+
+.filters button {
+    font: inherit;
+    font-size: 16px;
+    color: inherit;
+    background: transparent;
+    border: 1.5px solid var(--ink);
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--paper);
+}
+
+.artists h2 {
+    font-size: 64px;
+}

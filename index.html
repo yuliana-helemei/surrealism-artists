@@ -30,14 +30,16 @@
             <h2>Що це було</h2>
             <p>У 1924 році Андре Бретон видав «Маніфест сюрреалізму»: мистецтво має працювати з тим, що народжується без контролю розуму, — зі снами, випадковістю і несподіваними зіставленнями. Так склався рух, який змінив живопис, кіно і літературу.</p>
         </section>
-        <section id="artists">
-            <h2>Митці</h2>
-            <div class="filters">
-                <button type="button" data-country="all">Усі</button>
-                <button type="button" data-country="spain">Іспанія</button>
-                <button type="button" data-country="belgium">Бельгія</button>
-                <button type="button" data-country="mexico">Мексика</button>
-                <button type="button" data-country="other">Інші</button>
+        <section id="artists" class="artists">
+            <div class="artists-header">
+                <h2>Митці</h2>
+                <div class="filters">
+                    <button type="button" class="active" data-country="all">Усі</button>
+                    <button type="button" data-country="spain">Іспанія</button>
+                    <button type="button" data-country="belgium">Бельгія</button>
+                    <button type="button" data-country="mexico">Мексика</button>
+                    <button type="button" data-country="other">Інші</button>
+                </div>
             </div>
             <article class="featured" data-country="spain">
                 <img src="images/dali.jpg" alt="Розплавлені годинники на тлі пустелі">
