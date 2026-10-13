@@ -6,6 +6,10 @@
     --blue: #2F3FA8;
     --muted: #6B6275;
     --cloud: color-mix(in srgb, var(--paper) 85%, transparent);
+    --space-s: 12px;
+    --space-m: 36px;
+    --space-l: 56px;
+    --space-section: 90px;
 }
 
 *, *::before, *::after {
@@ -177,4 +181,51 @@ footer {
 
 .artists h2 {
     font-size: 64px;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 640px 1fr;
+    gap: 60px;
+    margin-bottom: var(--space-section);
+}
+
+.featured__image {
+    width: 100%;
+    aspect-ratio: 8 / 5;
+    object-fit: cover;
+}
+
+.featured__body {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0 18px;
+}
+
+.featured__title {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+.featured__meta {
+    margin-top: var(--space-s);
+    font-size: 1.0625rem;
+    line-height: 1;
+    color: var(--muted);
+}
+
+.featured__description {
+    margin-top: var(--space-m);
+    font-size: 1.125rem;
+    line-height: 1.67;
+}
+
+.featured__link {
+    align-self: flex-start;
+    margin-top: var(--space-l);
+    padding: 14px 36px;
+    background-color: var(--blue);
+    font-size: 1.0625rem;
+    color: var(--paper);
+    border-radius: 999px;
 }
