@@ -283,4 +283,15 @@ footer {
     .artists-grid {
         grid-template-columns: 1fr;
     }
+
+    header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 24px;
+    }
 }
